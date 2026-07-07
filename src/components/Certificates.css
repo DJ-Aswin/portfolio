@@ -1,0 +1,26 @@
+.certificates {
+  padding: 80px;
+}
+
+.certificates h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.certificate-card {
+  padding: 22px;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.certificate-card:hover {
+  border-color: #3b82f6;
+  transform: translateY(-5px);
+}

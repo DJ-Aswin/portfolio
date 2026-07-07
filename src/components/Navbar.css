@@ -1,0 +1,44 @@
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 10%;
+
+  background: rgba(15, 23, 42, 0.75);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+nav h2 {
+  font-size: 28px;
+  font-weight: 700;
+  cursor: pointer;
+
+  letter-spacing: 1px;
+}
+
+nav ul {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+}
+
+nav li {
+  cursor: pointer;
+
+  color: #cbd5e1;
+
+  transition: 0.3s ease;
+}
+
+nav li:hover {
+  color: #60a5fa;
+}
