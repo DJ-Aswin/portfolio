@@ -1,36 +1,39 @@
-.skills {
-  padding: 80px;
+.skills{
+    padding:100px 10%;
 }
 
-.skills h2 {
-  font-size: 40px;
-  margin-bottom: 40px;
+.skills h2{
+    font-size:42px;
+    margin-bottom:50px;
 }
 
-.skills-grid {
-  display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-
-  gap: 20px;
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:22px;
 }
 
-.skill-card {
-  padding: 20px;
+.skill-card{
+    padding:22px;
 
-  text-align: center;
+    background:#162033;
 
-  border: 1px solid #334155;
+    border:1px solid rgba(255,255,255,.08);
 
-  border-radius: 12px;
+    border-radius:16px;
 
-  font-size: 18px;
+    text-align:center;
 
-  transition: 0.3s;
+    font-weight:600;
+
+    transition:.35s;
 }
 
-.skill-card:hover {
-  border-color: #3b82f6;
+.skill-card:hover{
 
-  transform: translateY(-5px);
+    transform:translateY(-8px);
+
+    border-color:#3b82f6;
+
+    box-shadow:0 10px 25px rgba(59,130,246,.15);
 }

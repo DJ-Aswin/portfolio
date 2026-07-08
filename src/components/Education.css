@@ -7,10 +7,24 @@
   margin-bottom: 40px;
 }
 
-.education-card {
-  border: 1px solid #334155;
-  border-radius: 16px;
-  padding: 30px;
+.education-card{
+
+    background:#162033;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:35px;
+
+    transition:.35s;
+}
+
+.education-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#3b82f6;
 }
 
 .education-card h3 {

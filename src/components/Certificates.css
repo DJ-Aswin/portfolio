@@ -13,11 +13,26 @@
   gap: 20px;
 }
 
-.certificate-card {
-  padding: 22px;
-  border: 1px solid #334155;
-  border-radius: 12px;
-  transition: 0.3s;
+.certificate-card{
+
+    background:#162033;
+
+    border-radius:16px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:24px;
+
+    transition:.35s;
+}
+
+.certificate-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#3b82f6;
+
+    box-shadow:0 10px 25px rgba(59,130,246,.15);
 }
 
 .certificate-card:hover {
