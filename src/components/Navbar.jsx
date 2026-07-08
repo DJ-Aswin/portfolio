@@ -3,7 +3,7 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <nav>
-      <h2>Aswin</h2>
+      <h2>{"<ASWN/>"}</h2>
 
       <ul>
         <li><a href="#about">About</a></li>

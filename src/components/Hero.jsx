@@ -1,4 +1,5 @@
 import "./Hero.css";
+import { Github, Linkedin, Mail } from "lucide-react";
 import profile from "../assets/images/profile.png";
 import resume from "../assets/resume/Aswin D Resume.pdf";
 
@@ -20,13 +21,40 @@ function Hero() {
         </p>
 
         <div className="hero-buttons">
-          <a href={resume} download="Aswin D Resume.pdf">
-  <button>Download Resume</button>
-</a>
-          <a href="#contact">
-  <button>Contact Me</button>
-</a>
-        </div>
+
+  <a href={resume} download="Aswin D Resume.pdf">
+    <button>Download Resume</button>
+  </a>
+
+  <a href="#contact">
+    <button>Contact Me</button>
+  </a>
+
+  <div className="hero-socials">
+
+    <a
+      href="https://github.com/DJ-Aswin"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Github size={22} />
+    </a>
+
+    <a
+      href="https://www.linkedin.com/in/dj-aswin-568a732b5"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Linkedin size={22} />
+    </a>
+
+    <a href="mailto:aswin.d.ciet@gmail.com">
+      <Mail size={22} />
+    </a>
+
+  </div>
+
+</div>
 
       </div>
 
