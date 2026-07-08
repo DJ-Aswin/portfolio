@@ -39,3 +39,19 @@
   border-color: #3b82f6;
   transform: translateY(-5px);
 }
+
+@media (max-width:768px){
+
+    .certificates{
+        padding:80px 30px;
+    }
+
+    .certificates h2{
+        text-align:center;
+    }
+
+    .certificate-grid{
+        grid-template-columns:1fr;
+    }
+
+}

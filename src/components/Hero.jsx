@@ -1,5 +1,4 @@
 import "./Hero.css";
-import { Github, Linkedin, Mail } from "lucide-react";
 import profile from "../assets/images/profile.png";
 import resume from "../assets/resume/Aswin D Resume.pdf";
 
@@ -31,28 +30,26 @@ function Hero() {
   </a>
 
   <div className="hero-socials">
+  <a
+    href="https://github.com/DJ-Aswin"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    GitHub
+  </a>
 
-    <a
-      href="https://github.com/DJ-Aswin"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <Github size={22} />
-    </a>
+  <a
+    href="https://www.linkedin.com/in/dj-aswin-568a732b5"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    LinkedIn
+  </a>
 
-    <a
-      href="https://www.linkedin.com/in/dj-aswin-568a732b5"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <Linkedin size={22} />
-    </a>
-
-    <a href="mailto:aswin.d.ciet@gmail.com">
-      <Mail size={22} />
-    </a>
-
-  </div>
+  <a href="mailto:aswin.d.ciet@gmail.com">
+    Email
+  </a>
+</div>npm
 
 </div>
 

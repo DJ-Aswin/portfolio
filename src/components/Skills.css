@@ -37,3 +37,20 @@
 
     box-shadow:0 10px 25px rgba(59,130,246,.15);
 }
+
+@media (max-width:768px){
+
+    .skills{
+        padding:80px 30px;
+    }
+
+    .skills h2{
+        text-align:center;
+    }
+
+    .skills-grid{
+        grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+        gap:16px;
+    }
+
+}

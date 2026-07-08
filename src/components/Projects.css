@@ -65,3 +65,31 @@
 
     transform:translateY(-3px);
 }
+
+@media (max-width:768px){
+
+    .projects{
+        padding:80px 30px;
+    }
+
+    .projects h2{
+        text-align:center;
+    }
+
+    .project-card{
+        padding:25px;
+    }
+
+    .project-card h3{
+        font-size:24px;
+    }
+
+    .project-buttons{
+        flex-direction:column;
+    }
+
+    .project-buttons button{
+        width:100%;
+    }
+
+}

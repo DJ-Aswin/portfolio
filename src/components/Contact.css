@@ -34,3 +34,15 @@
 
     color:white;
 }
+
+@media (max-width:768px){
+
+    .contact{
+        padding:80px 30px;
+    }
+
+    .contact h2{
+        text-align:center;
+    }
+
+}
