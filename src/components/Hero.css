@@ -1,16 +1,43 @@
-.hero {
-  min-height: 90vh;
+.hero{
+    min-height:100vh;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
-  padding: 80px;
-  gap: 80px;
+    padding:100px 10%;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:380px;
+    height:380px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(59,130,246,.08),
+        transparent 75%
+    );
+
+    right:-120px;
+    top:80px;
+
+    z-index:0;
 }
 
 .hero-left {
   flex: 1;
+  position:relative;
+  z-index:2;
 }
 
 .hero-right{
@@ -18,6 +45,8 @@
   display:flex;
   justify-content:center;
   align-items:center;
+  position:relative;
+  z-index:2;
 }
 
 .hero-left p:first-child {
@@ -55,16 +84,65 @@
 }
 
 .hero-buttons button{
-  padding:15px 30px;
-  border-radius:10px;
-  font-size:16px;
-  font-weight:600;
-  cursor:pointer;
-  transition:.3s;
+
+    padding:16px 34px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#3b82f6,#2563eb);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+
+    box-shadow:0 8px 18px rgba(59,130,246,.18);
+
+    will-change: transform;
+    
+    transform: translateZ(0);
+
 }
 
 .hero-buttons button:hover{
-  transform:translateY(-3px);
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 24px rgba(59,130,246,.25);
+
+}
+
+.hero-buttons a:first-child button{
+
+    background:linear-gradient(135deg,#3b82f6,#1d4ed8);
+
+}
+
+.hero-buttons a:nth-child(2) button{
+
+    background:transparent;
+
+    border:2px solid #3b82f6;
+
+    color:#3b82f6;
+
+    box-shadow:none;
+
+}
+
+.hero-buttons a:nth-child(2) button:hover{
+
+    background:#3b82f6;
+
+    color:white;
+
 }
 
 .profile-image {
@@ -80,26 +158,47 @@
     0 20px 40px rgba(0,0,0,.35),
     0 0 30px rgba(59,130,246,.18);
 
-  transition: .35s ease;
+  transition: .3s ease;
 }
 
 .profile-image:hover{
   transform: translateY(-8px) scale(1.02);
 }
 
-.hero-socials {
-  display: flex;
-  align-items: center;
-  gap: 18px;
+.hero-socials{
+    display:flex;
+    align-items:center;
+    gap:18px;
 }
 
-.hero-socials a {
-  color: #cbd5e1;
-  transition: 0.3s ease;
+.hero-socials a{
+
+    width:46px;
+    height:46px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#1b2740;
+
+    color:#ffffff;
+
+    font-size:22px;
+
+    transition:.3s ease;
 }
 
-.hero-socials a:hover {
-  color: #3b82f6;
+.hero-socials a:hover{
+
+    transform:translateY(-5px);
+
+    background:#3b82f6;
+
+    box-shadow:0 10px 25px rgba(59,130,246,.35);
+
 }
 
 @media (max-width: 768px) {

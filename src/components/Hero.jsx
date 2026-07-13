@@ -1,10 +1,19 @@
 import "./Hero.css";
 import profile from "../assets/images/profile.png";
 import resume from "../assets/resume/Aswin D Resume.pdf";
+import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 function Hero() {
   return (
-    <section id="home" className="hero">
+    <motion.section
+  id="home"
+  className="hero"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.45 }}
+>
 
       <div className="hero-left">
 
@@ -30,12 +39,13 @@ function Hero() {
   </a>
 
   <div className="hero-socials">
+
   <a
     href="https://github.com/DJ-Aswin"
     target="_blank"
     rel="noopener noreferrer"
   >
-    GitHub
+    <FaGithub />
   </a>
 
   <a
@@ -43,13 +53,14 @@ function Hero() {
     target="_blank"
     rel="noopener noreferrer"
   >
-    LinkedIn
+    <FaLinkedin />
   </a>
 
   <a href="mailto:aswin.d.ciet@gmail.com">
-    Email
+    <MdEmail />
   </a>
-</div>npm
+
+</div>
 
 </div>
 
@@ -65,7 +76,7 @@ function Hero() {
 
       </div>
 
-    </section>
+    </motion.section>
   );
 }
 

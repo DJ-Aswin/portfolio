@@ -6,14 +6,55 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
+html{
+
+    scroll-behavior:smooth;
+
 }
 
-body {
-  font-family: "Space Grotesk", sans-serif;
-  background: #0f172a;
-  color: #ffffff;
+*{
+
+    box-sizing:border-box;
+
+}
+
+body{
+    font-family:"Space Grotesk",sans-serif;
+
+    color:#fff;
+
+    background:
+        radial-gradient(circle at top right, rgba(59,130,246,.18), transparent 30%),
+        radial-gradient(circle at bottom left, rgba(37,99,235,.12), transparent 35%),
+        #0f172a;
+
+    overflow-x:hidden;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+}
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+
+        linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px),
+
+        linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px);
+
+    background-size:50px 50px;
+
+    pointer-events:none;
+
+    z-index:-1;
+
 }
 
 a {

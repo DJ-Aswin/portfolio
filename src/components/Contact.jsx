@@ -1,13 +1,21 @@
 import "./Contact.css";
+import { motion } from "framer-motion";
 
 function Contact() {
   return (
-    <section id="contact" className="contact">
+    <motion.section
+  id="contact"
+  className="contact"
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.2 }}
+  transition={{ duration: 0.6 }}
+>
       <h2>Contact</h2>
 
       <p>Interested in working together or have an opportunity?</p>
 
-      <div className="contact-details">
+      <div className="contact-card">
 
   <p>
     <strong>Email:</strong>{" "}
@@ -39,7 +47,7 @@ function Contact() {
   </p>
 
 </div>
-    </section>
+    </motion.section>
   );
 }
 

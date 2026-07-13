@@ -1,42 +1,76 @@
 import "./Projects.css";
+import { motion } from "framer-motion";
+import arenahub from "../assets/images/arenahub.png";
+
+const projects = [
+  {
+    title: "ArenaHub",
+    image: arenahub,
+    description: "Esports Tournament Management Platform",
+    tech: "React • Node.js • Express • SQLite • JWT",
+    demo: "https://bgmi-tournament-management-system-m.vercel.app",
+    github: "https://github.com/DJ-Aswin/bgmi-tournament-management-system",
+  },
+
+  // Future projects
+  // {
+  //   title:"",
+  //   image:"",
+  //   description:"",
+  //   tech:"",
+  //   demo:"",
+  //   github:"",
+  // }
+];
 
 function Projects() {
   return (
-    <section id="projects" className="projects">
-      <h2>Projects</h2>
+    <section className="projects" id="projects">
+      <motion.h2
+        initial={{ opacity: 0, y: 25 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        Projects
+      </motion.h2>
 
-      <div className="project-card">
-        <h3>ArenaHub - Esports Tournament Management System</h3>
+      <div className="projects-grid">
+        {projects.map((project, index) => (
+          <motion.div
+            className="project-card"
+            key={index}
+            whileHover={{ y: -20 }}
+            transition={{ duration: 0.3 }}
+          >
+            <img src={project.image} alt={project.title} />
 
-        <p>
-          A full-stack web application that streamlines esports tournament
-          management with role-based authentication, tournament creation,
-          team registration, voting, OTP email verification, and an admin
-          dashboard.
-        </p>
+            <div className="project-info">
+              <h3>{project.title}</h3>
 
-        <p>
-          <strong>Tech Stack:</strong> React, Node.js, Express.js, SQLite,
-          JWT, Nodemailer, Vercel, Render
-        </p>
+              <p>{project.description}</p>
 
-        <div className="project-buttons">
-         <a
-  href="https://bgmi-tournament-management-system-m.vercel.app"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <button>Live Demo</button>
-</a>
+              <span>{project.tech}</span>
 
-<a
-  href="https://github.com/DJ-Aswin/bgmi-tournament-management-system"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <button>GitHub</button>
-</a>
-        </div>
+              <div className="project-links">
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        ))}
       </div>
     </section>
   );
