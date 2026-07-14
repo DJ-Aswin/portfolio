@@ -2,16 +2,12 @@ import "./Certificates.css";
 import { motion } from "framer-motion";
 
 function Certificates() {
-  const certificates = [
-    "Google Data Analytics Professional Certificate",
-    "Google Project Management Professional Certificate",
-    "Career Essentials in Generative AI by Microsoft & LinkedIn",
-    "SQL and Relational Databases 101",
-    "Microsoft 365 Fundamentals",
-    "Deloitte Data Analytics",
-    "Essentials of Prompt Engineering",
-    "Full Stack Development Internship Certificate"
-  ];
+   const certificates = [
+  "NPTEL - Human Computer Interaction (Elite - 86%)",
+  "NVIDIA - Fundamentals of Deep Learning",
+  "Full Stack Development Internship - Logirtha Technologies",
+  "Software Development Lifecycle Fundamentals - Great Learning"
+];
 
   return (
     <motion.section

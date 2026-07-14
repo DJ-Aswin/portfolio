@@ -1,175 +1,175 @@
-.projects {
+.projects{
 
-    padding: 100px 80px;
-
-}
-
-.projects h2 {
-
-    font-size: 48px;
-
-    margin-bottom: 50px;
+    padding:70px 80px;
 
 }
 
-.projects-grid {
+.projects h2{
 
-    display: grid;
+    font-size:40px;
 
-    grid-template-columns: repeat(3, 1fr);
+    margin-bottom:30px;
 
-    gap: 35px;
+}
+
+.projects-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
 
 }
 
 /* ---------- Card ---------- */
 
-.project-card {
+.project-card{
 
-    background: rgba(24, 34, 56, .75);
+    background:rgba(24,34,56,.75);
 
-    border: 1px solid rgba(59,130,246,.15);
+    border:1px solid rgba(59,130,246,.15);
 
-    border-radius: 24px;
+    border-radius:24px;
 
-    overflow: hidden;
+    overflow:hidden;
 
-    backdrop-filter: blur(10px);
+    backdrop-filter:blur(10px);
 
-    transition: transform .35s ease,
-                box-shadow .35s ease,
-                border-color .35s ease;
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
 
-    will-change: transform;
+    will-change:transform;
 
-    transform: translateZ(0);
+    transform:translateZ(0);
 
 }
 
-.project-card:hover {
+.project-card:hover{
 
-    transform: translateY(-20px);
+    transform:translateY(-20px);
 
-    border-color: #3b82f6;
+    border-color:#3b82f6;
 
-    box-shadow:
-        0 18px 40px rgba(59,130,246,.18);
+    box-shadow:0 18px 40px rgba(59,130,246,.18);
 
 }
 
 /* ---------- Image ---------- */
 
-.project-card img {
+.project-card img{
 
-    width: 100%;
+    width:100%;
 
-    height: 240px;
+    height:240px;
 
-    object-fit: cover;
+    object-fit:cover;
 
-    display: block;
+    display:block;
 
-    transition: transform .45s ease;
+    transition:transform .45s ease;
 
-    will-change: transform;
+    will-change:transform;
 
 }
 
-.project-card:hover img {
+.project-card:hover img{
 
-    transform: scale(1.06);
+    transform:scale(1.06);
 
 }
 
 /* ---------- Content ---------- */
 
-.project-info {
+.project-info{
 
-    padding: 24px;
-
-}
-
-.project-info h3 {
-
-    font-size: 26px;
-
-    margin-bottom: 12px;
+    padding:24px;
 
 }
 
-.project-info p {
+.project-info h3{
 
-    color: #cbd5e1;
+    font-size:24px;
 
-    line-height: 1.7;
-
-    margin-bottom: 18px;
+    margin-bottom:12px;
 
 }
 
-.project-info span {
+.project-info p{
 
-    display: block;
+    color:#cbd5e1;
 
-    color: #60a5fa;
+    line-height:1.7;
 
-    font-size: 14px;
+    margin-bottom:18px;
 
-    margin-bottom: 22px;
+}
+
+.project-info span{
+
+    display:block;
+
+    color:#60a5fa;
+
+    font-size:14px;
+
+    margin-bottom:22px;
 
 }
 
 /* ---------- Buttons ---------- */
 
-.project-links {
+.project-links{
 
-    display: flex;
+    display:flex;
 
-    gap: 14px;
-
-}
-
-.project-links a {
-
-    flex: 1;
-
-    text-align: center;
-
-    text-decoration: none;
-
-    padding: 12px;
-
-    border-radius: 10px;
-
-    font-weight: 600;
-
-    transition: .3s;
+    gap:14px;
 
 }
 
-.project-links a:first-child {
+.project-links a{
 
-    background: #2563eb;
+    flex:1;
 
-    color: white;
+    text-align:center;
+
+    text-decoration:none;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s;
 
 }
 
-.project-links a:last-child {
+.project-links a:first-child{
 
-    border: 1px solid #3b82f6;
+    background:#2563eb;
 
-    color: white;
-
-    background: transparent;
+    color:#fff;
 
 }
 
-.project-links a:hover {
+.project-links a:last-child{
 
-    transform: translateY(-4px) scale(1.03);
+    background:transparent;
 
-    box-shadow: 0 10px 25px rgba(59,130,246,.18);
+    color:#fff;
+
+    border:1px solid #3b82f6;
+
+}
+
+.project-links a:hover{
+
+    transform:translateY(-4px) scale(1.03);
+
+    box-shadow:0 10px 25px rgba(59,130,246,.18);
 
 }
 
@@ -190,6 +190,14 @@
     .projects{
 
         padding:80px 30px;
+
+    }
+
+    .projects h2{
+
+        text-align:center;
+
+        font-size:36px;
 
     }
 

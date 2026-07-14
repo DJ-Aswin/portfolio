@@ -1,14 +1,14 @@
 .learning{
 
-    padding:100px 10%;
+    padding:70px 80px;
 
 }
 
 .learning h2{
 
-    font-size:42px;
+    font-size:40px;
 
-    margin-bottom:40px;
+    margin-bottom:30px;
 
 }
 
@@ -18,7 +18,7 @@
 
     grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 
-    gap:22px;
+    gap:25px;
 
 }
 
@@ -30,18 +30,44 @@
 
     backdrop-filter:blur(10px);
 
-    border-radius:18px;
-
     border:1px solid rgba(59,130,246,.15);
 
-    transition:.3s;
+    border-radius:18px;
+
+    transition:transform .3s ease,
+               border-color .3s ease,
+               box-shadow .3s ease;
+
+    will-change:transform;
+
+    transform:translateZ(0);
 
 }
 
 .learning-card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-12px);
 
     border-color:#60a5fa;
+
+    box-shadow:0 15px 30px rgba(59,130,246,.15);
+
+}
+
+@media (max-width:768px){
+
+    .learning{
+
+        padding:80px 30px;
+
+    }
+
+    .learning h2{
+
+        text-align:center;
+
+        font-size:36px;
+
+    }
 
 }
