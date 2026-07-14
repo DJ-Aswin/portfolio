@@ -1,6 +1,6 @@
 import "./Projects.css";
 import { motion } from "framer-motion";
-import arenahub from "../assets/images/arenahub.png";
+import arenahub from "../assets/images/arenahub.webp";
 
 const projects = [
   {

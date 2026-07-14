@@ -1,5 +1,5 @@
 import "./Hero.css";
-import profile from "../assets/images/profile.png";
+import profile from "../assets/images/profile.webp";
 import resume from "../assets/resume/Aswin D Resume.pdf";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
